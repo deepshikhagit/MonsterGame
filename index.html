@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Monster Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+</head>
+<body>
+
+<div id="Player"></div>
+<div id="Dragon"></div>
+
+<div id="actions" class="col-lg-6" style="padding-right:6px;">
+  <input type="button" class="action btn btn-info form-control " id="attack" value="ATTACK">
+  <input type="button" class="action btn btn-info form-control " id="blast" value="BLAST">
+  <input type="button" class="action btn btn-info form-control " id="heal" value="HEAL">
+  <input type="button" class="action btn btn-info form-control " id="giveup" value="GIVE-UP">
+</div>
+
+<div id="container">
+    <h5 align="center"><b>Commentary Box</b></h5>
+    <div id="commentary"></div>
+</div>
+
+<div id="blink"></div>
+
+<div id="PlayerHealth"></div>
+<div id="DragonHealth"></div>
+
+<script src = "main.js"></script>
+</body>
+</html>

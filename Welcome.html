@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcom to Monster Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+</head>
+<body ng-app="ImagesModule">
+
+    <div ng-controller="slideShowController" class="imageslide" ng-switch='slideshow' ng-animate="'animate'">
+        <div class="slider-content" ng-switch-when="1">
+            <img src="/images/PlayerImage.png" width="100%" height="400px"/>
+        </div>  
+        <div class="slider-content" ng-switch-when="2">
+            <img src="/images/DragonAttack.png" width="100%" height="400px"/>
+        </div>
+        <div class="slider-content" ng-switch-when="3">
+            <img src="/images/PlayerAttacking.png" width="100%" height="400px"/>
+        </div>  
+        <div class="slider-content" ng-switch-when="4">
+            <img src="/images/DragonImage.png" width="100%" height="400px"/>
+        </div>  
+    </div>
+
+    <button onclick="window.location.href = 'index.html';" class="btn btn-info form-control " id="start">START</button>
+    <script src = "main.js"></script>
+</body>
+</html>

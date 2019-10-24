@@ -1,0 +1,160 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: black;
+ }
+
+#Player{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+	width: 500px;
+    height: 300px;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(/images/PlayerImage.png);
+    background-repeat: no-repeat;
+    margin: 20px auto;	
+ }
+
+#Dragon{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+	width: 500px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(/images/DragonImage.png);
+    background-repeat: no-repeat;
+	margin: 20px auto;	
+ }
+
+#actions{
+    position: absolute;
+    top: 390px;
+    left: 180px;
+	width: 200px;
+    height: 275px;
+ }
+
+.btn {
+    border: 4px solid black;
+    padding: 30px 38px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+#container{
+    position: absolute;
+    top: 390px;
+    left: 630px;
+	width: 700px;
+    height: 175px;
+    background-color: rgb(115, 207, 198);
+  }
+
+#commentary{
+    position: absolute;
+    top: 45px;
+	width: 700px;
+    height: 145px;
+    background-color: grey;
+    overflow-y: scroll;
+  }
+
+#yes{
+    height: 40px;
+    width: 70px;
+    right: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: green;
+ }
+#no{
+    height: 40px;
+    width: 70px;
+    right: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: grey;
+ }
+
+#blink{
+    position: absolute;
+    top: 600px;
+    left: 600px;
+	width: 700px;
+    height: 125px;
+    background-color: black;
+ }
+
+#PlayerHealth{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+	width: 50px;
+    height: 300px;
+	background-color: green;
+  }
+
+#DragonHealth{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+	width: 50px;
+    height: 300px;
+	background-color: red;
+  }
+  
+#start{
+    position: absolute;
+    top: 500px;
+    width: 300px;
+    left: 600px;
+    height: 50px;
+    align-self: center;
+	background-color: green;
+ }
+
+span{
+    font-size: 25px;
+    font-family: cursive;
+    color:red;
+    animation: blink 1s linear infinite;
+ }
+
+.imageslide{
+    width:100%;
+    height:400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+ }
+    
+.imageslide .slider-content {
+    position: absolute;
+    width:100%;
+    height:400px;
+ }
+    
+.animate-enter,.animate-leave {
+    -webkit-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+    -moz-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+    -ms-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+    -o-transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+    transition:1000ms cubic-bezier(.165,.84,.44,1) all;
+ }
+    
+.animate-enter {
+    left:100%;
+ }
+    
+.animate-leave.animate-leave-active {
+    left:-100%;
+ }
+    
+.animate-enter.animate-enter-active,.animate-leave {
+    left:0;
+ }
+
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
